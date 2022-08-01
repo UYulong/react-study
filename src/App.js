@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./app.css";
+
+const name = "React";
+
+const songs = [
+  { id: 1, name: "痴心绝对" },
+  { id: 2, name: "像我这样的人" },
+  { id: 3, name: "南山南" },
+];
+
+const flag = true;
+
+const styleObj = {
+  fontWeight: "bold",
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={styleObj}>
+      hello {name}
+      <ul>
+        {songs.map((song) => (
+          <li key={song.id}>{song.name}</li>
+        ))}
+      </ul>
+      <p style={{ color: "red", fontSize: "30px" }}>
+        {flag ? "hello react" : "hello vue"}
+      </p>
+      <span className="box">外部样式</span>
     </div>
   );
 }
