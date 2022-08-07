@@ -7,7 +7,9 @@ import ReactDOM from "react-dom/client";
 // import App from "./base/04-form"; // 表单
 // import App from "./base/05-state-up"; // 状态提升
 // import App from "./base/06-context"; // context 透传
-import App from "./base/07-props"; // props
+// import App from "./base/07-props"; // props
+// import App from "./base/example/index.js"; // todoMVC
+import App from "./base/example/index";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
