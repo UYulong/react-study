@@ -17,7 +17,10 @@ import ReactDOM from "react-dom/client";
 
 // react-router 
 // import App from './react-router/01-base'; // 路由基础使用
-import App from './react-router/nest/index'; // 嵌套路由
+// import App from './react-router/nest/index'; // 嵌套路由
+
+// mobx
+import App from './mobx/01-base'; // mobx 基础使用
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
