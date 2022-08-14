@@ -13,7 +13,11 @@ import ReactDOM from "react-dom/client";
 
 // hooks
 // import App from "./hooks/01-useState"; // useState
-import App from "./hooks/02-useEffect"; //useEffect
+// import App from "./hooks/02-useEffect"; //useEffect
+
+// react-router 
+// import App from './react-router/01-base'; // 路由基础使用
+import App from './react-router/nest/index'; // 嵌套路由
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
