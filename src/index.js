@@ -20,7 +20,8 @@ import ReactDOM from "react-dom/client";
 // import App from './react-router/nest/index'; // 嵌套路由
 
 // mobx
-import App from './mobx/01-base'; // mobx 基础使用
+// import App from './mobx/01-base'; // mobx 基础使用
+import App from './mobx/02-module'; // mobx 模块化
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

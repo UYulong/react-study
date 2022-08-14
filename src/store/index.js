@@ -1,22 +1,17 @@
-import { makeAutoObservable } from "mobx"
+import React from "react"
+import CouterStore from "./counter.Store"
+import ListStore from "./list.Store"
 
-class CouterStore {
-  count = 0
-
+class RootStore {
   constructor() {
-    makeAutoObservable(this)
-    this.addCount = this.addCount.bind(this)
-  }
-
-  addCount() {
-    this.count++
-  }
-
-  get doubleCount() {
-    return this.count * 2
+    this.counterStore = new CouterStore()
+    this.listStore = new ListStore()
   }
 }
 
-const counterStore = new CouterStore()
+const rootStore = new RootStore()
 
-export default counterStore
+const context = React.createContext(rootStore)
+const useStore = () => React.useContext(context)
+
+export default useStore
