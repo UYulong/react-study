@@ -21,7 +21,10 @@ import ReactDOM from "react-dom/client";
 
 // mobx
 // import App from './mobx/01-base'; // mobx 基础使用
-import App from './mobx/02-module'; // mobx 模块化
+// import App from './mobx/02-module'; // mobx 模块化
+
+// react + hooks + mobx ==> todoMVC
+import App from './mobx/example/index'; // todoMVC
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
