@@ -11,6 +11,9 @@ const Login = () => {
   const onFinish = ({ username }) => {
     if (loginStore.checkLoginIsPass(username)) {
       navigate('/', { replace: true })
+
+      // 浏览器中存一份 token
+      localStorage.setItem('react-study', 'react-study-token')
     }
   };
 
