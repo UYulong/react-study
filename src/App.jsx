@@ -9,7 +9,9 @@ import './App.css'
 // import Comps from './06_高阶组件/index'
 // import Comps from './07_Portal/index'
 // import Comps from './08_动画/index'
-import Comps from './09_styled-components/index'
+// import Comps from './09_styled-components/index'
+import Comps from './10_classnames/index'
+
 
 class App extends Component {
   render() {
