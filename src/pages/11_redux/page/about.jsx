@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
-import { addCounterAction } from '../../../store/actionCreators';
+import { addCounterAction } from '../../../store/couter';
 
 export class About extends PureComponent {
 
@@ -25,7 +25,7 @@ export class About extends PureComponent {
 }
 
 const mapStateToProps = (state) => ({
-  counter: state.counter
+  counter: state.counter.counter
 })
 
 const mapDispatchToProps = (dispatch) => ({

@@ -1,5 +1,6 @@
 .content {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .content > div {

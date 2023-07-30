@@ -3,6 +3,7 @@ import Home from './page/home'
 import About from './page/about'
 
 import './style.css'
+import Category from './page/category'
 
 export class index extends PureComponent {
   render() {
@@ -13,6 +14,10 @@ export class index extends PureComponent {
         <div className='content'>
           <Home />
           <About />
+        </div>
+
+        <div className='content'>
+          <Category />
         </div>
       </div>
     )
