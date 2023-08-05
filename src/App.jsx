@@ -13,7 +13,8 @@ import './App.css'
 // import Comps from './pages/08_动画/index'
 // import Comps from './pages/09_styled-components/index'
 // import Comps from './pages/10_classnames/index'
-import Comps from './pages/11_redux/index'
+// import Comps from './pages/11_redux/index'
+import Comps from './pages/12_RTK/index'
 
 
 class App extends Component {

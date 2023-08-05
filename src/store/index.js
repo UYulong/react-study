@@ -1,16 +1,11 @@
-import { createStore, applyMiddleware, combineReducers, compose } from 'redux'
-import thunk from 'redux-thunk'
-import counterReducer from './couter'
-import homeReducer from './home'
+import { configureStore } from '@reduxjs/toolkit'
 
-// 开发环境下，打开redux-devtools
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+import counterReducer from './features/counter'
 
-const reducer = combineReducers({
-  counter: counterReducer,
-  home: homeReducer
+const store = configureStore({
+  reducer: {
+    counter: counterReducer
+  }
 })
-
-const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
 
 export default store
