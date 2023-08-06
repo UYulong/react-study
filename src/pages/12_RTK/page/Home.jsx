@@ -1,8 +1,13 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { addCounter } from '../../../store/features/counter'
+import { fetchHomeData } from '../../../store/features/home'
 
 export class Home extends PureComponent {
+
+  async componentDidMount() {
+    this.props.fetchHomeData()
+  }
 
   addCounter(num) {
     this.props.addCounter(num)
@@ -29,6 +34,10 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
   addCounter(num) {
     dispatch(addCounter(num))
+  },
+
+  fetchHomeData() {
+    dispatch(fetchHomeData())
   }
 })
 
